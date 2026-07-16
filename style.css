@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#f2f2f2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+.container{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+
+    text-align:center;
+
+}
+
+/* Heading */
+
+h1{
+
+    margin-bottom:20px;
+
+}
+
+/* Mode */
+
+.mode{
+
+    margin-bottom:20px;
+
+}
+
+.mode label{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+.mode select{
+
+    padding:8px;
+
+    font-size:16px;
+
+    border-radius:6px;
+
+    margin-left:10px;
+
+}
+
+/* Status */
+
+#status{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+/* Board */
+
+#board{
+
+    width:306px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,100px);
+
+    grid-template-rows:repeat(3,100px);
+
+    gap:3px;
+
+}
+
+/* Cells */
+
+.cell{
+
+    width:100px;
+
+    height:100px;
+
+    background:white;
+
+    border:2px solid black;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:55px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    transition:0.2s;
+
+}
+
+.cell:hover{
+
+    background:#e8f4ff;
+
+}
+
+/* Restart Button */
+
+#restartBtn{
+
+    margin-top:25px;
+
+    padding:12px 25px;
+
+    font-size:16px;
+
+    border:none;
+
+    border-radius:6px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+#restartBtn:hover{
+
+    background:#1d4ed8;
+
+}
